@@ -15,7 +15,7 @@ a {
   height: 900px;
   max-width: 1440px;
   margin: 0 auto;
-  background-image: url('/img/cover-image.png');
+  background-image: url('../img/cover-image.png');
   background-repeat: no-repeat;
   background-position: right;
 }
