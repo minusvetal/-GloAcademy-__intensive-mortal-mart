@@ -13,11 +13,7 @@ a {
 }
 .container {
   min-height: 100vh;
-  width: 90%;
-  max-width: 1440px;
-  margin: 0 auto;
-  background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), url('../img/cover-image.png') no-repeat top right;
-  background-size: contain;
+  background: linear-gradient(90deg, #010202 0%, #010202 45%,rgba(1, 2, 2, 0.2) 90%);
 }
 
 .header {
@@ -146,95 +142,56 @@ a {
 
 /* адаптив */
 
-
-
-  @media (max-width: 1200px) {
-
-    .description {
-      padding: 0;
-   
-    }
-  }
-
-
-@media (max-width: 1024px){
-      .container{
-        background-image: none;
-      }
-      .footer {
-        width: 100vw;
-        height: 100vh;
-        top: -20%;
-        background: no-repeat url(../img/cover-image.png) center center;
-        background-size: contain;
-      }
-      
-      .description {
-        width: 100%;
-     
-      }
-      .description-item {
-        text-align: center;
-      }
-    .description-logo {
-      display: flex;
-      max-width: 100%;
-      justify-content: center;
-    }
-    .description-text {
-      max-width: 100%;
-      font-size: 25px;
-      line-height: 100%;
-      color: #FFFFFF;
-      padding-bottom: 10px;
-    }
-
-}
-
 @media (max-width: 786px ){
   .container {
-    height: 70%;
+    height: auto;
+    padding-bottom: 500px;
+    background: url('../img/cover-image.png') no-repeat bottom center / 400px;
   }
-  .header {
-
+  
+video {
+    display: none;
+  }
+    .header {
   padding: 25px 0;    
   }
-  .description-film-logo {
-      width: 80%;
-    }
-.description-text {
+  .description {
+    padding-top: 1%;
+  }
+
+  .description-text {
     max-width: 100%;
-        font-size: 16px;
-   }
-    .button {
+    font-size: 16px;
+  }
+  .description-logo{
+    max-width: 100%;
+  }
+  .button {
   padding: 8px 12px;
-}
-   .modal-dialog {
+  }
+  .modal-dialog {
   width: 50%;
   padding: 5px 5px;
   font-size: 10px;
-}
-.footer {
-  width: 100vw;
-  height: 50vh;
-}
-
+  }
 
 }
 
-@media (max-width: 480px ){
+@media (max-width: 567px ){
   .container {
     height: 50%;
   }
-    .description-film-logo {
-      width: 80%;
-    }
-.description-text {
-        font-size: 14px;
-   }
-   
+  .description-text {
+  font-size: 14px;
+  }
   .button {
-  padding: 4px 6px;
+  padding: 6px 8px;
+  }
+.user-name {
+  display: none;
+}
+.description-promo {
+font-size: 0;
 }
 .modal-dialog {
   width: 50%;
@@ -251,23 +208,12 @@ a {
 
 .description-text {
     font-size: 16px;
-   }
-
-      .footer {
-        width: 100vw;
-        height: 50vh;
-      }
-
-      .button {
-  padding: 4px 6px;
-}
-.description-promo {
-font-size: 0;
+  }
+  .button {
+ margin-bottom: 10px;
 }
 .modal-dialog {
   width: 50%;
-
-
 }
 
 }
