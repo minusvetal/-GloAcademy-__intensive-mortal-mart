@@ -8,6 +8,7 @@
   <title>💥Mortal💥</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -32,29 +33,27 @@
 
       <div class="description-item">
         <span class="description-tag">2021 боевик, фэнтези, фантастика США 18+</span>
-        <p class="description-text">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва,
-          где останется только сильнейший</p>
+        <p class="description-text">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший</p>
         <div class="button-group">
-          <button class="button description-order" href="#" id="order">Предзаказ
-            фильма</button>
-          <button class="button description-promo" href="https://youtu.be/fb1BF9B1MGQ" target="_blanck"><img
-              src="img/play.svg" class="promo-img">Смотреть трейлер</button>
+          <a data-fancybox data-src="#hidden-content" href="javascript:;" class="button description-order">Предзаказ  фильма</a>
+          <a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA" class="button description-promo"><img
+              src="img/play.svg" class="promo-img">Смотреть трейлер</a>
         </div>
       </div>
 
     </section>
-
-
   </div>
 
-  <div class="modal">
+    <div class="modal" style="display: none" id="hidden-content">
     <div class="modal-dialog">
-      <h1>Кина не будет</h1>
-      <button class="close">&times;</button>
+      <h1>Подписаться</h1>
+      <input type="email" class="submit" placeholder="Ваш E-mail">
+      <button data-fancybox-close class="btn">Подписаться</button>
     </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/jquery.vide.min.js"></script>
   <script src="js/main.js"></script>
 </body>
